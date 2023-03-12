@@ -5,9 +5,8 @@ function ImageCard({ image }) {
     // console.log(tags);
 
     return (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        
-            <img className="w-full" src={image.webformatURL} alt="Sunset in the mountains" />
+        <div className="max-w-sm rounded overflow-hidden shadow-lg hover:transform hover:scale-105 duration-300">
+            <img className="w-full" src={image.webformatURL}  />
             <div className="px-6 py-4 pb-0">
                 <div className="font-bold text-xl mb-2 text-blue-600">Photo By <span className='text-red-500'>{image.user}</span></div>
 
