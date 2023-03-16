@@ -15,10 +15,8 @@ function App() {
       .then(response => response.json())
       .then(data => {
         setImages(data.hits);
+        setIsLoading(false);
 
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 2000)
 
       })
       .catch(err => console.log(err))
